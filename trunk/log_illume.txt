@@ -1,0 +1,550 @@
+
+
+
+
+
+2008/09/07 18:58:04 AEST GMT +10
+
+
+Went down to the cafe, because I had no net access at home.
+
+Quickly had a chat to aka, and akalias.
+
+
+
+I think we decided to do a musical game of some sort.
+
+The theme is 'the length of a piece of string'.   
+
+Which kind of turns out to be better than 'punk' for our game idea.
+
+One where you can play your real life guitar, and have the pitch detected.
+
+
+
+
+
+
+
+2008/09/07 19:05:15 AEST GMT +10
+
+Tonight I want to make a basic prototype, and make some base code.
+
+- intro sequence
+    - show some background images, with text on them.
+    - play some music.
+    - fade between the various parts of text/images.
+
+- a selection screen.
+    - which can be used as either character, or level select.
+    - you select a part of the screen, and click to go onto that 'level'.
+
+- story board of game idea.
+
+
+
+
+2008/09/07 19:46:08 AEST GMT +10
+
+Wrote down some notes, about how things will work.  Using pen and paper, in my little notebook.
+
+
+- make note tapper interface.
+    - given a song, and some note positions, and a note.
+    - 
+
+
+2008/09/07 19:59:49 AEST GMT +10
+
+Got transitions from intro to top level thing.
+
+
+2008/09/07 20:33:16 AEST GMT +10
+
+
+Did some washing...
+
+- make note tapper interface.
+    - given a song, and some note positions, and a note.
+    - 
+
+
+Need to set up a test framework.
+
+
+
+
+
+
+
+
+
+2008/09/09 07:09:10 AEST GMT +10
+
+starting a quick burst in the morning.
+
+Didn't get anything much done last night.  Was too tired.
+
+
+
+2008/09/09 07:19:46 AEST GMT +10
+
+Updated the intro... looks kind of better now.
+
+
+Now a note tapping interface...
+
+
+- from [[note,time], ...] 
+- display notes across the screen.   
+    - total time, eg 30.0 seconds - divided by screen width (640)
+        - draw a note at the pos, or an underline.
+
+- display position of time.  As a line from top of screen to bottom.
+
+- You need to tap within a certain amount of error for each note.
+    - eg, might be 0.5, or 1.0 seconds.  Need to test, and tweak for good value.
+
+
+
+
+
+2008/09/09 07:44:29 AEST GMT +10
+
+Got the game going from the intro to NoteGuess part of the game.
+
+Now to display the parts.
+
+
+
+2008/09/10 06:34:35 AEST GMT +10
+
+
+I got SoundAnalyse compiling and installing.  I also made a windows installer for it.
+
+
+
+
+Now to get the noteguess part done.
+
+
+
+
+
+
+2008/09/10 06:43:26 AEST GMT +10
+
+a bit of trouble figuring out what to do.
+
+Fixed up main.py which was converted to use constants.py and fastevents
+
+
+- from [[note,time], ...] 
+- display notes across the screen.   
+    - total time, eg 30.0 seconds - divided by screen width (640)
+        - draw a note at the pos, or an underline.
+
+DONE - display position of time.  As a line from top of screen to bottom.
+
+- You need to tap within a certain amount of error for each note.
+    - eg, might be 0.5, or 1.0 seconds.  Need to test, and tweak for good value.
+
+
+
+
+
+
+2008/09/10 07:04:42 AEST GMT +10
+
+Got the tapping of lines done ok.  
+
+Except they are placed to the left of the mark... not on the mark.  oh well.
+
+
+Might also need a line to show more precisely where the note falls.
+
+
+
+
+2008/09/10 07:14:03 AEST GMT +10
+
+Drew a little line under the letters.  It does show it more precisely.
+
+- draw notes, or note underlines they need to play.
+- figure out the incoming notes 
+
+
+
+
+Will need to have a set of songs, that people need to play back.
+
+
+
+
+
+
+
+2008/09/11 06:19:49 AEST GMT +10
+
+Nicholas got the pitch detection hooked up to the game.
+
+
+I tried it with my casio keyboard and built in laptop mic... it seems to work fine :)
+
+
+
+
+
+
+2008/09/11 06:38:21 AEST GMT +10
+
+Spent a bit of time making the code look nicer...
+
+
+Now I need to figure out the different parts.
+
+
+
+Areas:
+
+- intro
+- doctors surgery.
+- note tapping.
+    - this will be a club scene.
+- club selection.
+
+
+
+2008/09/11 06:55:57 AEST GMT +10
+
+spoke to guy about getting our internet connection at home.
+
+... I'm not really sure if that would actually save me time... 
+  or if it'd waste coding time on the internet.
+
+Anyway, I think I'll have internet access tonight.  
+    Easier than going to a cafe with wireless I guess.
+
+
+Areas:
+- intro
+- doctors surgery.
+- note tapping.
+    - this will be a club scene.
+- club selection.
+
+
+Things you do:
+- play notes
+- get stabbed in the eye if you get a certain number of notes wrong.
+- get cash on winning.   Lose cash getting to gigs.
+- get eyeballs.  Lose eyeballs getting them stabbed.
+
+
+
+
+2008/09/11 07:12:48 AEST GMT +10
+
+
+Started a Player class.  Not much in there at the moment.
+
+
+- make doctors_surgery.py club_select.py
+- note tapping... 
+    - show ok interval.   Left and right bars.
+    - show when the player gets it correct.
+
+
+
+2008/09/11 07:47:47 AEST GMT +10
+
+
+Whilst making the gig select, and doctors surgery... 
+
+I noted that this could be a gig simulator too.  
+
+Where people can offer you gigs, and you decide which to take or not.  
+Some will offer you a rider of 10 beers, and a bowl of soup after the gig... 
+  but never give it to you!   Bastards!  Gigs might cost you money.
+
+
+You can collect myspace friends, and even friendster, and linked-in friends.
+
+You can also collect fans, and stalkers.
+
+
+
+
+Areas:
+- intro
+- doctors surgery.
+- note tapping.
+    - this will be a club scene.
+- club selection.
+
+
+Things you do:
+- play notes
+- get stabbed in the eye if you get a certain number of notes wrong.
+- get cash on winning.   Lose cash getting to gigs.
+- get eyeballs.  Lose eyeballs getting them stabbed.
+- collect fans friends and stalkers.
+
+
+
+
+
+
+
+
+
+2008/09/11 07:58:54 AEST GMT +10
+
+
+
+
+
+2008/09/11 08:10:15 AEST GMT +10
+
+drew the 'allowed error' markers.
+
+
+
+
+2008/09/13 14:34:48 AEST GMT +10
+
+
+
+- detect if the note played is in range
+- show fails/passes on the screen
+- update the Player class if you lose an eye
+
+
+
+
+
+2008/09/13 15:37:16 AEST GMT +10
+
+Made a doctor image... and got myself a V.
+
+
+
+
+2008/09/13 18:12:46 AEST GMT +10
+
+We have ocempgui in the same directory as the game now.
+
+Spent ages fucking around with a video we want to include... pygame.movie SUCKS!!!
+
+
+I'm not sure what the secret is to encode video for it so that it works...
+
+It kind of can be done... but not really.
+
+
+- make video player that uses jpegs.
+
+
+Tried to make a video strip of the video... but it killed my poor vista laptop.
+
+
+
+Should I bother with this still?   YES!  I have to now... it's taken ages.
+
+I can't wait until we get SDL_ffmpeg working with pygame :)
+
+
+
+
+
+
+
+2008/09/13 18:44:51 AEST GMT +10
+
+
+
+
+2008/09/13 18:52:23 AEST GMT +10
+
+
+
+
+2008/09/13 20:14:42 AEST GMT +10
+
+
+Getting closer to finishing video player...
+
+
+talked to nick about gig select screen... 
+we're going to come up with 6 gigs, with pictures and text.
+
+
+
+
+2008/09/13 22:10:36 AEST GMT +10
+
+got video player working.
+
+
+
+2008/09/13 23:01:08 AEST GMT +10
+
+Drank some wine with a friend who popped by.
+
+
+
+
+- detect if the note played is in range
+- show fails/passes on the screen
+- update the Player class if you lose an eye
+
+
+
+
+2008/09/14 06:52:11 AEST GMT +10
+
+
+- doctor screen.
+    - fix eye button.
+    - show stats ($, spare eyes etc)
+    - gig button.
+
+- gig select updates.
+    - doctor button.
+
+
+
+- note guess updates...
+    - detect if the note played is in range
+    - show fails/passes on the screen
+    - update the Player class if you lose an eye
+
+
+
+
+2008/09/14 07:19:52 AEST GMT +10
+
+wasted time trying to get ocempgui widget to move to the right of the screen.
+
+
+arg!
+
+
+
+
+- doctor screen.
+    - fix eye button.
+    - show stats ($, spare eyes etc)
+    - gig button.
+
+- gig select updates.
+    - doctor button.
+
+
+- note guess updates...
+    - detect if the note played is in range
+    - show fails/passes on the screen
+    - update the Player class if you lose an eye
+
+
+
+
+2008/09/14 07:34:51 AEST GMT +10
+
+
+- when you click the fix eye option, 
+    - it should say 'eye has been fixed, thanks!'
+- gig button should go to a gig.
+
+
+
+2008/09/14 08:27:05 AEST GMT +10
+
+Got the game moving between sections now.
+
+
+
+
+- gig select updates.
+    - doctor button.
+
+
+- note guess updates...
+    - detect if the note played is in range
+    - show fails/passes on the screen
+    - update the Player class if you lose an eye
+
+
+
+
+
+
+
+2008/09/14 08:47:50 AEST GMT +10
+
+
+got it going to doctors surgery... finally.
+
+
+- doctors surgery... 
+   - go to eye result page    ->    gig select
+
+
+
+
+- note guess updates...
+    - detect if the note played is in range
+    - show fails/passes on the screen
+    - update the Player class if you lose an eye
+
+
+2008/09/14 09:07:31 AEST GMT +10
+
+ok, you can go from the doctors surgery to various places now.
+
+
+
+
+
+2008/09/14 09:22:06 AEST GMT +10
+
+
+- add sounds.
+
+- note guess updates...
+    - detect if the note played is in range
+    - show fails/passes on the screen
+    - update the Player class if you lose an eye
+    - go to gig_results screen.
+
+
+2008/09/14 09:51:49 AEST GMT +10
+
+
+failed at putting in sounds... they don't seem to work.
+
+2008/09/14 10:19:13 AEST GMT +10
+
+seems pygame.Sound doesn't like loading some small .ogg files on my computer.
+
+Looks like a windows 'open file in text mode bug'.
+
+
+
+2008/09/14 10:28:23 AEST GMT +10
+
+Put a little bit of music in, and a Sound, now that they work.
+
+- note guess updates...
+    - detect if the note played is in range
+    - show fails/passes on the screen
+    - update the Player class if you lose an eye
+
+
+
+2008/09/14 10:50:30 AEST GMT +10
+
+well, for some reason I don't want to work on the note guessing part so much...
+
+I feel like adding some story elements, and improving the intro some more.
+
